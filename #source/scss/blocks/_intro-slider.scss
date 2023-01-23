@@ -1,0 +1,32 @@
+.slider {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.slider__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.slider__item {
+	width: 23%;
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 20px 0;
+	border-top: 2px solid #fff;
+	opacity: 0.7;
+
+	&.active {
+		opacity: 1;
+	}
+}
+
+.slider__number {
+	font-size: 24px;
+	font-weight: 700;
+	color: #fff;
+}

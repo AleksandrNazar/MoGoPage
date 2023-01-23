@@ -1,0 +1,48 @@
+.about {
+	padding: 80px 0;
+}
+
+.about__block {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 40px;
+}
+
+.about__item {
+	width: 30%;
+	position: relative;
+	background-color: #95e1d3;
+
+	&:hover .about__text {
+		opacity: 1;
+	}
+}
+
+.about__img {
+	background: linear-gradient(to bottom, #f38181, #fce38a);
+	transition: transform 0.2s linear;
+
+	&:hover img {
+		opacity: 0.1;
+	}
+
+	&:hover {
+		transform: translate3d(-10px, -10px, 0);
+	}
+}
+
+.about__text {
+	width: 100%;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700;
+	font-size: 18px;
+	text-align: center;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 2;
+	transform: translate3d(0, -50%, 0);
+	transition: opacity 0.2s linear;
+}
