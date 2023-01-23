@@ -2,11 +2,11 @@
 	background-color: #95e1d3;
 }
 
-.statistics__block {
+.stat__block {
 	display: flex;
 }
 
-.statistics__item {
+.stat__item {
 	flex: 1 1 0;
 	padding: 70px 25px;
 	border-left: 1px solid #b5eae0;
@@ -18,14 +18,14 @@
 	}
 }
 
-.statistics__count {
+.stat__count {
 	margin-bottom: 10px;
 	font-size: 72px;
 	font-weight: 700;
 	line-height: 1;
 }
 
-.statistics__text {
+.stat__text {
 	font-size: 14px;
 	text-transform: uppercase;
 }
