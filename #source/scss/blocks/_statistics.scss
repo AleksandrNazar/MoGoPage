@@ -4,6 +4,7 @@
 
 .stat__block {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .stat__item {
@@ -28,4 +29,37 @@
 .stat__text {
 	font-size: 14px;
 	text-transform: uppercase;
+}
+
+@media(max-width: 992px) {
+	.stat__block {
+		justify-content: center;
+	}
+
+	.stat__item {
+		flex: none;
+		width: 33.33333%;
+		border: 0;
+		padding-top: 30px;
+		padding-bottom: 30px;
+
+		&:last-child {
+			border-right: 0;
+		}
+	}
+}
+
+@media(max-width: 576px) {
+	.stat__item {
+		width: 100%;
+		border-bottom: 1px solid #b5eae0;
+
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+
+	.stat__count {
+		font-size: 52px;
+	}
 }

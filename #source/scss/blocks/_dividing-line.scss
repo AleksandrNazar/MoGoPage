@@ -21,3 +21,13 @@ hr {
 	background-color: #e5e5e5;
 }
 
+@media(max-width: 576px) {
+	.line {
+		margin: 20px auto;
+	}
+
+	.line-red {
+		margin: 15px auto;
+	}
+}
+

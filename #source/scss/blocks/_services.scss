@@ -1,16 +1,17 @@
-.services {
-	padding: 80px 0;
-}
-
 .services__block {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .services__item {
-	flex: 1 1 0;
-	padding-left: 85px;
-	padding-right: 35px;
+	width: 33.3333%;
+	margin-bottom: 40px;
+	padding: 0 35px 40px 85px;
 	position: relative;
+}
+
+.services__item--border {
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .services__icon {
@@ -30,4 +31,32 @@
 
 .services__text {
 	color: #999;
+}
+
+@media(max-width: 992px) {
+	.services__item {
+		width: 50%;
+		padding-bottom: 0;
+	}
+
+	.services__item--border {
+		border-bottom: 0;
+	}
+}
+
+@media(max-width: 768px) {
+	.services__block {
+		justify-content: center;
+	}
+
+	.services__item {
+		width: 100%;
+		max-width: 400px;
+		padding-left: 55px;
+		padding-right: 0;
+	}
+
+	.services__icon {
+		left: 0;
+	}
 }

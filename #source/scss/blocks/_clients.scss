@@ -1,0 +1,51 @@
+.clients {
+	background: url("../images/clients-bg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.clients__block {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 70px;
+}
+
+.clients__item {
+	width: 50%;
+	padding: 0 45px 0 175px;
+	position: relative;
+	margin-bottom: 60px;
+}
+
+.clients__photo {
+	width: 110px;
+	height: 110px;
+
+	border-radius: 50%;
+
+	position: absolute;
+	top: 0;
+	left: 32px;
+	z-index: 1;
+}
+
+.clients__name {
+	margin-bottom: 5px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.clients__text {
+	color: #999;
+
+	&:before {
+		content: '';
+		display: block;
+		width: 60px;
+		height: 3px;
+		margin: 15px 0;
+		background-color: #f38181;
+	}
+}

@@ -31,3 +31,27 @@
 	right: 0;
 	z-index: 1;
 }
+
+@media(max-width: 768px) {
+	.devices__block {
+		max-width: 300px;
+	}
+
+	.devices__item--iphone {
+		max-width: 180px;
+		bottom: -50px;
+		right: -80px;
+	}
+}
+
+@media(max-width: 576px) {
+	.devices__block {
+		max-width: 200px;
+	}
+
+	.devices__item--iphone {
+		max-width: 130px;
+		bottom: -35px;
+		right: -50px;
+	}
+}

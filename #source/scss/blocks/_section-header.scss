@@ -21,3 +21,13 @@
 .section__text {
 	color: #999;
 }
+
+@media(max-width: 576px) {
+	.section__title {
+		font-size: 24px;
+	}
+
+	.section__suptitle {
+		font-size: 18px;
+	}
+}
