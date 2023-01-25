@@ -47,6 +47,18 @@
 	margin-bottom: 5px;
 }
 
-.works__text {
+@media(max-width: 768px) {
+	.works__block {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
 
+@media(max-width: 768px) {
+	.works__title {
+		font-size: 12px;
+	}
+
+	.works__text {
+		font-size: 10px;
+	}
 }

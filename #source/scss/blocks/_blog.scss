@@ -1,6 +1,7 @@
 .blog__block {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .blog__item {
@@ -75,5 +76,29 @@
 	& i {
 		color: #95e1d3;
 		margin-right: 3px;
+	}
+}
+
+@media(max-width: 768px) {
+	.blog__block {
+		max-width: 380px;
+		margin: 0 auto;
+	}
+
+	.blog__item {
+		width: 100%;
+		margin-bottom: 30px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.blog__content {
+		margin-bottom: 10px;
+	}
+
+	.blog__footer {
+		padding-top: 10px;
 	}
 }

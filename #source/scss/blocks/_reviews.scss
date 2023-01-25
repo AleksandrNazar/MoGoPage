@@ -60,3 +60,48 @@
 .reviews__btn--next {
 	right: 0;
 }
+
+@media(max-width: 1230px) {
+	.reviews__text {
+		font-size: 16px;
+	}
+
+	.reviews__author {
+		font-size: 20px;
+	}
+}
+
+@media(max-width: 992px) {
+	.reviews__block {
+		padding: 0 60px;
+	}
+
+	.reviews__item {
+		padding-left: 175px;
+	} 
+}
+
+@media(max-width: 768px) {
+	.reviews__photo {
+		position: static;
+		margin: 0 auto 20px;
+	}
+
+	.reviews__item {
+		padding-left: 0;
+	}
+
+	.reviews__btn {
+		top: 35%;
+	}
+}
+
+@media(max-width: 576px) {
+	.reviews__block {
+		padding: 0;
+	}
+
+	.reviews__btn {
+		top: 20%;
+	}
+}
