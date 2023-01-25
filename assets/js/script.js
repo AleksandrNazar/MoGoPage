@@ -10,17 +10,24 @@ window.onscroll = function headerFix() {
     }
 };
 
-//Mobile menu
-const button = document.querySelector('.nav-toggle');
+
+//Mobile nav
+//const button = document.querySelector('.nav-toggle');
 const mobileMenu = document.querySelector('.nav');
 
-button.addEventListener('click', function() {
-    mobileMenu.classList.toggle('active');
-});
+document.addEventListener('click', navToggler);
+
+function navToggler(event) {
+    if(event.target.closest('.nav-toggle')) {
+        mobileMenu.classList.toggle('active');
+    } else {
+        mobileMenu.classList.remove('active');
+    }
+}
 
 
 //Active link
-let navLinks = document.querySelectorAll('.nav__link');
+const navLinks = document.querySelectorAll('.nav__link');
 
 navLinks.forEach(function(links) {
     links.addEventListener('click', function() {
@@ -32,7 +39,7 @@ navLinks.forEach(function(links) {
 })
 
 
-//Accordion (wedo section)
+//Accordion (wede section)
 const accordionItems = document.querySelectorAll('.accordion__item'); 
 
 accordionItems.forEach(function(item){
@@ -40,3 +47,13 @@ accordionItems.forEach(function(item){
         this.classList.toggle('active');
     });
 });
+
+
+
+
+
+
+
+    
+
+    
